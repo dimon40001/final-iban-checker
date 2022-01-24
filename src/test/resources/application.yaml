@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+    username: root
+    password: 1
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: none
+hibernate:
+  hbm2ddl:
+    auto: create
+
+# D = 0-9
+# C = A-Z
+# A = a-zA-Z0-9
+config:
+  ibanconfig:
+    AL:
+      ibanlength: 28
+      pattern: "D08A16"

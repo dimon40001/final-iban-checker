@@ -1,0 +1,5 @@
+config:
+  ibanconfig:
+    XX:
+      ibanlength: 24
+      pattern: ".*"

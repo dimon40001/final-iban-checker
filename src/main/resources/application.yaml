@@ -1,0 +1,234 @@
+spring:
+  profiles:
+    active: dev
+  output:
+    ansi.enabled: detect
+  datasource:
+    url: jdbc:postgresql://192.168.1.47:15432/postgres
+    username: root
+    password: 1
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: none
+
+# D = 0-9
+# C = A-Z
+# A = a-zA-Z0-9
+config:
+  ibanconfig:
+    AD:
+      ibanlength: 24
+      pattern: "D04D04A12"
+    AE:
+      ibanlength: 23
+      pattern: "D03D16"
+    AL:
+      ibanlength: 28
+      pattern: "D08A16"
+    AT:
+      ibanlength: 20
+      pattern: "D05D11"
+    AZ:
+      ibanlength: 28
+      pattern: "C04A20"
+    BA:
+      ibanlength: 20
+      pattern: "D03D03D08D02"
+    BE:
+      ibanlength: 16
+      pattern: "D03D07D02"
+    BG:
+      ibanlength: 22
+      pattern: "C04D04D02A08"
+    BH:
+      ibanlength: 22
+      pattern: "C04A14"
+    BR:
+      ibanlength: 29
+      pattern: "D08D05D10C01A01"
+    CH:
+      ibanlength: 21
+      pattern: "D05A12"
+    CR:
+      ibanlength: 22
+      pattern: "D04D14"
+    CY:
+      ibanlength: 28
+      pattern: "D03D05A16"
+    CZ:
+      ibanlength: 24
+      pattern: "D04D06D10"
+    DE:
+      ibanlength: 22
+      pattern: "D08D10"
+    DK:
+      ibanlength: 18
+      pattern: "D04D09D01"
+    DO:
+      ibanlength: 28
+      pattern: "C04D20"
+    EE:
+      ibanlength: 20
+      pattern: "D02D02D11D01"
+    ES:
+      ibanlength: 24
+      pattern: "D04D04D01D01D10"
+    FI:
+      ibanlength: 18
+      pattern: "D06D07D01"
+    FO:
+      ibanlength: 18
+      pattern: "D04D09D01"
+    FR:
+      ibanlength: 27
+      pattern: "D05D05A11D02"
+    GB:
+      ibanlength: 22
+      pattern: "C04D06D08"
+    GE:
+      ibanlength: 22
+      pattern: "C02D16"
+    GI:
+      ibanlength: 23
+      pattern: "C04A15"
+    GL:
+      ibanlength: 18
+      pattern: "D04D09D01"
+    GR:
+      ibanlength: 27
+      pattern: "D03D04A16"
+    GT:
+      ibanlength: 28
+      pattern: "A04A20"
+    HR:
+      ibanlength: 21
+      pattern: "D07D10"
+    HU:
+      ibanlength: 28
+      pattern: "D03D04D01D15D01"
+    IE:
+      ibanlength: 22
+      pattern: "C04D06D08"
+    IL:
+      ibanlength: 23
+      pattern: "D03D03D13"
+    IS:
+      ibanlength: 26
+      pattern: "D04D02D06D10"
+    IT:
+      ibanlength: 27
+      pattern: "C01D05D05A12"
+    JO:
+      ibanlength: 30
+      pattern: "C04D04A18"
+    KW:
+      ibanlength: 30
+      pattern: "C04A22"
+    KZ:
+      ibanlength: 20
+      pattern: "D03A13"
+    LB:
+      ibanlength: 28
+      pattern: "D04A20"
+    LC:
+      ibanlength: 32
+      pattern: "C04A24"
+    LI:
+      ibanlength: 21
+      pattern: "D05A12"
+    LT:
+      ibanlength: 20
+      pattern: "D05D11"
+    LU:
+      ibanlength: 20
+      pattern: "D03A13"
+    LV:
+      ibanlength: 21
+      pattern: "C04A13"
+    MC:
+      ibanlength: 27
+      pattern: "D05D05A11D02"
+    MD:
+      ibanlength: 24
+      pattern: "A02A18"
+    ME:
+      ibanlength: 22
+      pattern: "D03D13D02"
+    MK:
+      ibanlength: 19
+      pattern: "D03A10D02"
+    MR:
+      ibanlength: 27
+      pattern: "D05D05D11D02"
+    MT:
+      ibanlength: 31
+      pattern: "C04D05A18"
+    MU:
+      ibanlength: 30
+      pattern: "C04D02D02D12D03C03"
+    NL:
+      ibanlength: 18
+      pattern: "C04D10"
+    NO:
+      ibanlength: 15
+      pattern: "D04D06D01"
+    PK:
+      ibanlength: 24
+      pattern: "C04A16"
+    PL:
+      ibanlength: 28
+      pattern: "D08D16"
+    PS:
+      ibanlength: 29
+      pattern: "C04A21"
+    PT:
+      ibanlength: 25
+      pattern: "D04D04D11D02"
+    QA:
+      ibanlength: 29
+      pattern: "C04A21"
+    RO:
+      ibanlength: 24
+      pattern: "C04A16"
+    RS:
+      ibanlength: 22
+      pattern: "D03D13D02"
+    SA:
+      ibanlength: 24
+      pattern: "D02A18"
+    SC:
+      ibanlength: 31
+      pattern: "C04D02D02D16C03"
+    SE:
+      ibanlength: 24
+      pattern: "D03D16D01"
+    SI:
+      ibanlength: 19
+      pattern: "D05D08D02"
+    SK:
+      ibanlength: 24
+      pattern: "D04D06D10"
+    SM:
+      ibanlength: 27
+      pattern: "C01D05D05A12"
+    ST:
+      ibanlength: 25
+      pattern: "D08D11D02"
+    TL:
+      ibanlength: 23
+      pattern: "D03D14D02"
+    TN:
+      ibanlength: 24
+      pattern: "D02D03D13D02"
+    TR:
+      ibanlength: 26
+      pattern: "D05A01A16"
+    UA:
+      ibanlength: 29
+      pattern: "D06A19"
+    VG:
+      ibanlength: 24
+      pattern: "C04D16"
+    XK:
+      ibanlength: 20
+      pattern: "D04D10D02"

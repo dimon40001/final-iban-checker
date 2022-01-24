@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+
+  ibanvalidator:
+    image: java-test-luminor:0.0.1
+    ports:
+      - 1080:8080
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:12.9
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - 15432:5432
+
